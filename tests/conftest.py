@@ -8,3 +8,5 @@ def browser_config():
     browser.config.window_height = "1080"
 
     browser.open("https://scan-interfax.ru/")
+    yield
+    browser.close()
